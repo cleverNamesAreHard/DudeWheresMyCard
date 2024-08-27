@@ -36,12 +36,53 @@ main {
     height: auto;
 }
 
-footer {
+/* Styling for the card's name */
+.card h3 {
+    font-size: 1.5em; /* Size for the card's name */
+    margin: 10px 0;
+}
+
+/* Specific styling for the card's level */
+.card p:first-of-type {
+    font-size: 1.5em; /* Match the size of the card's level text to the name */
+    font-weight: normal; /* Ensure the level text is not bold */
+    margin: 5px 0;
+}
+
+/* General styling for the card's details (mod, obtain methods, etc.) */
+.card p:not(:first-of-type) {
+    font-size: 1em; /* Keep the default size for other details */
+    margin: 5px 0;
+}
+
+/* New Styles for Card Locations Section */
+#card-locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#card-locations table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust this value if necessary */
+    margin: 10px auto; /* Center the table horizontally */
+}
+
+#card-locations th, #card-locations td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
-    padding: 10px 0;
+}
+
+#card-locations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    color: white;
+}
+
+#card-locations h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }

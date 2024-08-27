@@ -12,6 +12,7 @@
     </header>
 
     <main>
+        <!-- Card Selection Dropdown -->
         <section id="card-selector">
             <label for="card-dropdown">Select a Card:</label>
             <select id="card-dropdown">
@@ -19,15 +20,17 @@
                 <!-- Options will be populated by JavaScript -->
             </select>
         </section>
-        
+
+        <!-- Card Details Display -->
         <section id="card-display" style="display: none;">
-            <!-- Card details will be displayed here -->
+            <!-- Card details will be dynamically inserted here -->
+        </section>
+
+        <!-- Card Locations Display -->
+        <section id="card-locations" style="display: none;">
+            <!-- Card locations will be dynamically inserted here -->
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Triple Triad Viewer</p>
-    </footer>
     
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
