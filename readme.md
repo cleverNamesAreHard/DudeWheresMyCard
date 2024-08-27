@@ -7,7 +7,9 @@ This is a Flask-based web application designed to help users find information ab
 - **Card Selection**: Choose a Triple Triad card from a dropdown menu.
 - **Card Details**: View information on how to obtain the selected card.
 - **Dynamic Content**: Data is loaded dynamically based on the selected card.
-- **Dark Themed UI**: A modern, dark-themed interface using Bootstrap.
+- **Dark Themed UI**: A modern-ish, dark-themed interface.
+
+![Screenshot of webapp](https://i.imgur.com/pTcTBFs.png)
 
 ## Contributing
 
