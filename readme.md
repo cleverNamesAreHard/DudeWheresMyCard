@@ -20,6 +20,5 @@ Contributions are welcome! To contribute:
 
 ## Acknowledgments
 
-- **Final Fantasy VIII**: Triple Triad is a minigame from Final Fantasy VIII, developed by Square Enix.
-- **Bootstrap**: For providing the CSS framework used in this project.
-- **Heroku**: For hosting the application.
+- **AmandaLepre**: She was running Final Fantasy VIII and couldn't find a Mesmerize card, and asked in chat where she could find one.  Went searching and found that there wasn't 1 central tool for all the info about the cards in 1 place.  And the rest is history.
+- **AbsoluteSteve**: I used his *very* detailed [walkthrough of FF8](https://gamefaqs.gamespot.com/ps/197343-final-fantasy-viii/faqs/51741) to compile the card names, levels, and card mod details.  What an asbolute Chad.
