@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1c1c1c;
+    color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 2px 0;
     text-align: center;
 }
 
@@ -17,42 +17,86 @@ main {
     padding: 20px;
 }
 
-#card-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#card-selector {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.card {
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
+#card-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the center and the side tiles */
+    max-height: 100%; /* Ensure container height matches content */
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background-color: #fff;
 }
 
 .card img {
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
 }
 
-/* Styling for the card's name */
-.card h3 {
-    font-size: 1.5em; /* Size for the card's name */
+.card-content h3 {
+    font-size: 1.5em;
     margin: 10px 0;
 }
 
-/* Specific styling for the card's level */
-.card p:first-of-type {
-    font-size: 1.5em; /* Match the size of the card's level text to the name */
-    font-weight: normal; /* Ensure the level text is not bold */
+.card-content p.card-level {
+    font-size: 1.5em;
+    font-weight: normal;
     margin: 5px 0;
 }
 
-/* General styling for the card's details (mod, obtain methods, etc.) */
-.card p:not(:first-of-type) {
-    font-size: 1em; /* Keep the default size for other details */
-    margin: 5px 0;
+/* Tile container on the left and right of the card content */
+.tile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start tiles from the top */
+    gap: 5px; /* Minimal gap between tiles */
+    max-width: 300px; /* Maximum width of tiles */
+    height: 100%; /* Ensure tiles fit the available height */
+}
+
+.tile {
+    background-color: #444; /* Dark gray background */
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: calc(50% - 2.5px); /* Tile height is half of the container minus gaps */
+    box-sizing: border-box;
+}
+
+.tile h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.tile p {
+    font-size: 1em;
 }
 
 /* New Styles for Card Locations Section */
@@ -61,6 +105,12 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+}
+
+#card-locations h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f4f4f4;
 }
 
 #card-locations table {
@@ -80,9 +130,4 @@ main {
     padding-bottom: 12px;
     background-color: #333;
     color: white;
-}
-
-#card-locations h3 {
-    text-align: center;
-    margin-bottom: 10px;
 }

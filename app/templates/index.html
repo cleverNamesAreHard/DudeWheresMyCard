@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triple Triad Card Viewer</title>
+    <title>Dude, Where's My Card?</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
-        <h1>Triple Triad Card Viewer</h1>
+        <h1>Dude, Where's My Card?</h1>
     </header>
 
     <main>
@@ -23,12 +23,55 @@
 
         <!-- Card Details Display -->
         <section id="card-display" style="display: none;">
-            <!-- Card details will be dynamically inserted here -->
+            <div class="card-container">
+                <!-- Left Tiles -->
+                <div class="tile-container">
+                    <div class="tile" id="tile-card-mod" style="display: none;">
+                        <h4>Card Mod</h4>
+                        <p></p>
+                    </div>
+                    <div class="tile" id="tile-drop-from-monster" style="display: none;">
+                        <h4>Drop from Monster</h4>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Card Image, Name, and Level -->
+                <div class="card-content">
+                    <img src="" alt="Card Image">
+                    <h3>Card Name</h3>
+                    <p class="card-level">Level: </p>
+                </div>
+
+                <!-- Right Tiles -->
+                <div class="tile-container">
+                    <div class="tile" id="tile-obtain-by-card-command" style="display: none;">
+                        <h4>Obtain by Card Command</h4>
+                        <p></p>
+                    </div>
+                    <div class="tile" id="tile-obtain-by-triple-triad" style="display: none;">
+                        <h4>Obtain by Triple Triad</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Card Locations Display -->
         <section id="card-locations" style="display: none;">
-            <!-- Card locations will be dynamically inserted here -->
+            <h3>Open World Card Locations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Game Section</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Locations will be dynamically inserted here -->
+                </tbody>
+            </table>
         </section>
     </main>
     
