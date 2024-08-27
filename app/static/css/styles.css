@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#card-selector {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#card-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the center and the side tiles */
+    max-height: 100%; /* Ensure container height matches content */
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    max-width: 150px;
+    height: auto;
+}
+
+.card-content h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card-content p.card-level {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+/* Tile container on the left and right of the card content */
+.tile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start tiles from the top */
+    gap: 5px; /* Minimal gap between tiles */
+    max-width: 300px; /* Maximum width of tiles */
+    height: 100%; /* Ensure tiles fit the available height */
+}
+
+.tile {
+    background-color: #444; /* Dark gray background */
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: calc(50% - 2.5px); /* Tile height is half of the container minus gaps */
+    box-sizing: border-box;
+}
+
+.tile h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.tile p {
+    font-size: 1em;
+}
+
+/* New Styles for Card Locations Section */
+#card-locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#card-locations h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+}
+
+#card-locations table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust this value if necessary */
+    margin: 10px auto; /* Center the table horizontally */
+}
+
+#card-locations th, #card-locations td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#card-locations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #333;
+    color: white;
+}
